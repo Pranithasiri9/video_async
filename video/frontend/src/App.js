@@ -23,7 +23,8 @@ function App() {
 
   return (
     <div className="container">
-      <h2>Video Compression</h2>
+      {/* App Title */}
+      <h1 className="title">Video Forge</h1>
 
       <input
         type="file"
@@ -43,7 +44,10 @@ function App() {
 
       {tasks.map(task => (
         <div key={task.id} className="task-row">
-          <span>{task.filename} ({task.resolution}p)</span>
+          <span>
+            {task.filename} ({task.resolution}p)
+          </span>
+
           <span className={`state ${task.state}`}>{task.state}</span>
 
           {task.state === "COMPLETED" && (
@@ -59,5 +63,6 @@ function App() {
 }
 
 export default App;
+
 
 
