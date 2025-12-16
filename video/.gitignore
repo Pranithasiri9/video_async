@@ -1,0 +1,25 @@
+# Node
+node_modules/
+
+# Environment
+.env
+
+# OS
+.DS_Store
+
+# Build
+build/
+dist/
+
+# Generated video data
+backend_video/uploads/
+backend_video/outputs/
+
+# Media files
+*.mov
+*.mp4
+*.webm
+*.pdf
+
+
+
